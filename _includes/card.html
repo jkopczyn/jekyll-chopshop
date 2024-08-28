@@ -1,6 +1,6 @@
 <div class="ui card">
 
-<!--     {% assign foundImage = 0 %}
+    {% assign foundImage = 0 %}
     {% assign images = post.content | split:"<img" %}
     {% for image in images %}
         {% if image contains 'src' %}
@@ -13,7 +13,7 @@
                 {% break %}
             {% endif %}
         {% endif %}
-    {% endfor %} -->
+    {% endfor %}
 
     <div class="content">
         <a class="header" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | strip_html | truncatewords: 15 }}</a>
