@@ -1,5 +1,6 @@
 description: 'Simple Magazine-Style Page'
 title : Jekyll Chop-Shop
+year : 2024
 
 markdown: kramdown
 highlighter: rouge
