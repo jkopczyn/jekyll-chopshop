@@ -1,4 +1,5 @@
 description: 'Simple Magazine-Style Page'
+title : Jekyll Chop-Shop
 
 markdown: kramdown
 highlighter: rouge
