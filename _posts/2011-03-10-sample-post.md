@@ -67,34 +67,3 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 |=====
 | Foot1   | Foot2   | Foot3
 {: rules="groups"}
-
-## Code Snippets
-
-Syntax highlighting via Rouge
-
-```css
-#container {
-  float: left;
-  margin: 0 -240px 0 0;
-  width: 100%;
-}
-```
-
-Non Pygments code example
-
-    <div id="awesome">
-        <p>This is great isn't it?</p>
-    </div>
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-```html
-<a href="/" class="ui positive button">Success Button</a>
-```
-
-<a href="/" class="ui primary button">Primary Button</a>
-<a href="/" class="ui secondary button">Secondary Button</a>
-<a href="/" class="ui positive button">Positive Button</a>
-<a href="/" class="ui negative button">Negative Button</a>
