@@ -7,4 +7,4 @@ highlighter: rouge
 logo: false
 baseurl: /
 plugins: [jekyll-gist]
-permalink: /:year/:month/:title.html
+permalink: /:categories/:title.html # year can be used for ordering
