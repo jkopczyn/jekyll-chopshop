@@ -1,0 +1,26 @@
+<div class="ui card">
+
+    {% assign foundImage = 0 %}
+    {% assign images = page.content | split:"<img" %}
+    {% for image in images %}
+        {% if image contains 'src' %}
+            {% if foundImage == 0 %}
+                {% assign html = image | split:">" | first %}
+                <div class="image">
+                    <img {{ html }} />
+                </div> 
+                {% assign foundImage = 1 %}
+                {% break %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="content">
+        <a class="header" href="{{ BASE_PATH }}{{ page.url }}">{{ page.title | truncatewords: 15 }}</a>
+        <div class="description">
+            {{ page.content | truncatewords: 300 }}
+        </div>
+    </div>
+    <div class="extra content">
+    </div>
+</div>
