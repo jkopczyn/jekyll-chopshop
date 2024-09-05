@@ -6,6 +6,9 @@ layout: default
 <div class="ui centered grid stackable">
     {% assign counter = 0 %}
     {% for page in site.pages %}
+        {% if page.title == "" %}
+            {% continue %}
+        {% endif %}
         {% assign counter = counter | plus: 1 %}
         {% if counter == 1 %}
             <div class="eight wide column">
