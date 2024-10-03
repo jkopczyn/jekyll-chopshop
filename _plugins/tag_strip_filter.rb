@@ -1,6 +1,6 @@
 module Jekyll
   module TagStripFilter
-    def remove_img(input, reg_str, repl_str)
+    def remove_img(input)
       re = Regexp.new "<img .* />", Regexp::MULTILINE
 
       # This will be returned
@@ -9,4 +9,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_filter(Jekyll::RegexFilter)
+Liquid::Template.register_filter(Jekyll::TagStripFilter)
