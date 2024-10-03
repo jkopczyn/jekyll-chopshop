@@ -16,7 +16,7 @@
     {% endfor %}
 
     <div class="content">
-        <a class="header" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title | truncatewords: 15 }}</a>
+        <div class="header">{{ post.title }}</div>
         <div class="description">
             {{ post.content | truncatewords: 300 }}
         </div>
