@@ -18,7 +18,7 @@
     <div class="content">
         <div class="header">{{ post.title }}</div>
         <div class="description">
-            {{ post.content | truncatewords: 300 }}
+            {{ post.content | remove_img | truncatewords: 300 }}
         </div>
     </div>
     <div class="extra content">
